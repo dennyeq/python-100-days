@@ -1,8 +1,9 @@
 import random
 c = int(input("what so you choose? Type 0 for Rock, 1 for Paper or 2 for Scissorsa\n"))
-lista = [0, 1, 2]
+lista = ["Rock", "Paper", "Scissorsa"]
+print(f"{lista[c]}")
 i = random.randint(0, 2)
-print(f"Computer Choose:\n{i}")
+print(f"Computer Choose:\n{lista[i]}")
 if i == c:
 	print("It's a draw")
 elif c == 0:
