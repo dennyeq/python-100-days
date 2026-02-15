@@ -1,26 +1,18 @@
 import random
-c = int(input("what so you choose? Type 0 for Rock, 1 for Paper or 2 for Scissorsa\n"))
-lista = ["Rock", "Paper", "Scissorsa"]
-print(f"{lista[c]}")
-i = random.randint(0, 2)
-print(f"Computer Choose:\n{lista[i]}")
-if i == c:
+user_choose = int(input("what so you choose? Type 0 for Rock, 1 for Paper or 2 for Scissorsa\n"))
+list = ["Rock", "Paper", "Scissorsa"]
+print(f"{list[user_choose]}")
+maching_choose = random.randint(0, 2)
+print(f"Computer Choose:\n{lista[maching_choose]}")
+if maching_choose == user_choose:
 	print("It's a draw")
-elif c == 0:
-	if i == 2:
-		print("You win")
-	else:
-		print("You lose")
-elif c == 1:
-	if i == 0:
-		print("You win")
-	else:
-		print("You lose")
-elif c == 2:
-	if i == 1:
-		print("You win")
-	else:
-		print("You lose")
+elif user_choose == 0 and maching_choose == 2:
+	print("You win")
+elif user_choose == 1 and maching_choose == 0:
+	print("You win")
+elif user_choose == 2 and maching_choose == 1:
+	print("You win")
+elif user_choose != 0 or user_choose != 1 or use_choose != 2:
+	print("You lose")
 else:
 	print("Error: Write 0, 1 or 2")
-
