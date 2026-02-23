@@ -4,5 +4,5 @@ list = [
 "caboverde",
 "guinebissal",
 "brasil",
-"porrugal"
+"portugal"
 ]
